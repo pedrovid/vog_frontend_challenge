@@ -8,7 +8,7 @@ import * as React from "react";
 import {Button} from "react-bootstrap";
 
 
-function PostForm({postal, setPostal}) {
+function PostForm() {
     const params = useParams()
     const [postal, setPostal] = useState({
         title: "",

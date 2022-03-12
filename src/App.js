@@ -8,8 +8,7 @@ export default function App() {
         return (
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/posts" element={<Posts />} />
+                    <Route path="/" element={<Posts />} />
                     <Route path="/post/:id" element={<PostForm />} />
                     <Route path="/post" element={<PostForm />} />
                 </Routes>

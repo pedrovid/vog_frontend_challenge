@@ -10,7 +10,7 @@ function CustomNavbar() {
             <Nav className="me-auto">
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/universities">Universities</Nav.Link>
-                <Nav.Link href="posts">Postal Lookup</Nav.Link>
+                <Nav.Link href="/postalLookup">Postal Lookup</Nav.Link>
             </Nav>
           </Container>
         </Navbar>

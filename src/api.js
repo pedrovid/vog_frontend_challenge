@@ -44,4 +44,10 @@ export default class Api {
 
         return axios.get(uri);
     }
+
+    static getPostal(zipCode) {
+        const uri = "https://api.zippopotam.us/us/" + zipCode;
+
+        return axios.get(uri);
+    }
 }

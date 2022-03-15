@@ -2,7 +2,7 @@ import Form from 'react-bootstrap/Form'
 import {useEffect, useState} from "react";
 import * as React from "react";
 import {Button} from "react-bootstrap";
-import * as actions from "../redux-thunk/actions";
+import * as actions from "../redux-thunk/Posts/actions";
 
 
 function IntermediateComponentPostForm({postal, submit}) {

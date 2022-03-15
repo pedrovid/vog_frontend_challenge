@@ -1,5 +1,5 @@
 import {Card, Button} from "react-bootstrap";
-import * as actions from "../redux-thunk/actions";
+import * as actions from "../redux-thunk/Posts/actions";
 import {useDispatch} from "react-redux";
 import {useNavigate} from "react-router-dom";
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import * as actions from "../redux-thunk/actions";
+import * as actions from "../redux-thunk/Posts/actions";
 import {useEffect} from "react";
 import CustomNavbar from "../components/Navbar";
 import PostalCard from "../components/PostalCard";
@@ -10,7 +10,8 @@ import {useNavigate} from "react-router-dom";
 
 function Posts() {
     const navigate = useNavigate();
-    const postsResponse = useSelector((state) => state);
+    const postsResponse = useSelector((state) => state.posts);
+    console.log(postsResponse)
     const onCreate = () => navigate('/post', { replace: false });
 
     const dispatch = useDispatch();

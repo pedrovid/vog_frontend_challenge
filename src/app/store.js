@@ -1,10 +1,10 @@
 import { applyMiddleware, createStore } from 'redux';
-import reduxThunkReducer from '../redux-thunk/reducer';
 import thunk from 'redux-thunk';
+import reducersCombination from "../redux-thunk/ReducersCombination";
 
 export function configureStore() {
   const store = createStore(
-      reduxThunkReducer,
+      reducersCombination(),
       applyMiddleware(thunk)
   );
 

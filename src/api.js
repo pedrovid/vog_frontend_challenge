@@ -31,4 +31,17 @@ export default class Api {
 
         return axios.delete(uri)
     }
+
+
+    static getCountries() {
+        const uri = "https://restcountries.com/v3.1/all";
+
+        return axios.get(uri);
+    }
+
+    static getUniversities(country) {
+        const uri = "http://universities.hipolabs.com/search?country=" + country;
+
+        return axios.get(uri);
+    }
 }

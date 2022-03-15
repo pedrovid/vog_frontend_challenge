@@ -1,6 +1,6 @@
 import {useNavigate, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
-import * as actions from "../redux-thunk/actions";
+import * as actions from "../redux-thunk/Posts/actions";
 import {useEffect} from "react";
 import CustomNavbar from "../components/Navbar";
 import * as React from "react";

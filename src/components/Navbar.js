@@ -9,7 +9,7 @@ function CustomNavbar() {
             <Navbar.Brand href="/">VOG Challenge</Navbar.Brand>
             <Nav className="me-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="#link">Universities</Nav.Link>
+                <Nav.Link href="/universities">Universities</Nav.Link>
                 <Nav.Link href="posts">Postal Lookup</Nav.Link>
             </Nav>
           </Container>

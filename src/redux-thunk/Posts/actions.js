@@ -1,4 +1,4 @@
-import Api from "../api"
+import Api from "../../api"
 
 export const LOAD_POSTS_LOADING = 'REDUX_THUNK_LOAD_POSTS_LOADING';
 export const LOAD_POSTS_SUCCESS = 'REDUX_THUNK_LOAD_POSTS_SUCCESS';

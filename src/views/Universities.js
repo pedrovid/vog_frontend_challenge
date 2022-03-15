@@ -6,7 +6,6 @@ import {useEffect, useState} from "react";
 import CustomNavbar from "../components/Navbar";
 import {Dropdown, ListGroupItem} from "react-bootstrap";
 import UniversityCard from "../components/UniversityCard";
-import PostalCard from "../components/PostalCard";
 
 
 function Universities() {
@@ -54,7 +53,7 @@ function Universities() {
                     <div className="col-12 d-flex justify-content-center mt-4">
                     <Dropdown style={{overflowY: "auto", width: "380px"}}>
                         <Dropdown.Toggle variant="success" id="dropdown-basic">
-                            Country
+                            {selectedCountry}
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
                             {countriesResponse.data.map((country) => <Dropdown.Item as="button" key={country.cioc} onClick={() => manageCountry(country.name.common)}>
